@@ -26,8 +26,14 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   
   ##This was added as part of the tutorial
+  #def test_sign_in(user)
+  #  controller.sign_in(user)
+  #end
+  #def test_sign_in(user)
+  #controller.current_user = user
+  #end
   def test_sign_in(user)
-    controller.sign_in(user)
+  controller.sign_in(user)
   end
 
 end
